@@ -9,4 +9,11 @@ const allNotes = require('./db/db.json');
 // Middleware for parsing JSON and urlencoded form data
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static("public")); 
+app.use(express.static("public"));
+
+// HTML ROUTES
+// GET Route for homepage
+// Shows all notes
+app.get('/api/notes', (req, res) => {
+    res.json(allNotes.slice(1));
+}) 
