@@ -87,5 +87,5 @@ app.delete('/api/notes/:id', (req, res) => {
 
 // Function is used to bind and listen the connections on the specified host and port 
 app.listen(PORT, () => {
-    console.log(`API server now on port https://localhost:${PORT}!`);
+    console.log(`API server now on port http://localhost:${PORT} !`);
 }); 
