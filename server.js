@@ -1,5 +1,5 @@
 // Dependencies
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 const fs = require('fs');
 const path = require('path');
 const express = require('express');
@@ -87,5 +87,5 @@ app.delete('/api/notes/:id', (req, res) => {
 
 // Function is used to bind and listen the connections on the specified host and port 
 app.listen(PORT, () => {
-    console.log(`API server now on port ${PORT}!`);
+    console.log(`API server now on port https://localhost:${PORT}!`);
 }); 
